@@ -1,0 +1,81 @@
+/**
+ * Author： lzhuo_1995@163.com
+ * Date：2017/11/27
+ */
+
+.content {
+    position: relative;
+}
+
+.page_header {
+    width: auto;
+    height: 80px;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    color: #fff;
+    z-index: 9;
+    right: 0;
+}
+
+.title li {
+    float: left;
+    list-style-type: none;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.login {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.user_info, .user_title {
+    float: left;
+}
+
+.am-modal-dialog {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#user_login input {
+    margin: 10px 10%;
+    width: 80%;
+}
+
+#login_btn {
+    width: 50%;
+}
+
+#hidden_form {
+    display: none;
+}
+
+#add, #minus, #setting {
+    color: #2A3F54;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+
+#minus, #setting {
+    margin-left: 10px;
+}
+
+#mapping_form{
+    display: none;
+}
+
+#hidden_form3 {
+    display: none;
+}
+
+#hidden_form4 {
+    display: none;
+}
