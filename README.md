@@ -1,4 +1,0 @@
-# 数据交换优化版前端
-前端页面信息
-bootstrap和基于bootstrap的datepicker以及jquery已经引入到static目录下，后续js和css文件包括图片全部放入static目录下。
-html放在templates目录下，此目录是springboot的默认目录，html只写静态页面即可

@@ -110,12 +110,6 @@
                                     <li><a href="#">添加权限</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-user"></i> 管理员管理 <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="#">管理员列表</a></li>
-                                    <li><a href="#">添加管理员</a></li>
-                                </ul>
-                            </li>
                             <li><a><i class="fa fa-file-text-o"></i>日志管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="log/login_log.html">登录日志查看</a></li>
@@ -124,6 +118,13 @@
                                     <li><a>操作日志查看</a></li>
                                 </ul>
                             </li>
+                            <li><a><i class="fa fa-user"></i> 管理员管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#">管理员列表</a></li>
+                                    <li><a href="#">添加管理员</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -195,11 +196,11 @@
                                 <th><input type="checkbox" onclick="swapCheck()">&nbsp;&nbsp;全选</th>
                                 <th>序号</th>
                                 <th>分类名称</th>
-                                <th>分类编号</th>
+                                <!--<th>分类编号</th>-->
                                 <th>添加时间</th>
                                 <th>添加人</th>
                                 <th>所属类目</th>
-                                <th>状态</th>
+                                <!--<th>状态</th>-->
                             </tr>
                             </thead>
                             <tbody>
@@ -207,36 +208,36 @@
                                 <td><input type="checkbox" name="item" id="item0"></td>
                                 <td>1</td>
                                 <td class="unitName">硬笔书法</td>
-                                <td class="unitNum">001</td>
+                                <!--<td class="unitNum">001</td>-->
                                 <td class="unitStatue">2018-01-17 11:10:00</td>
                                 <td class="unitUser">Administrator</td>
-                                <td class="unitAddress">少儿部</td>
+                                <!--<td class="unitAddress">少儿部</td>-->
                                 <td class="unitPhone">
-                                    <span class="label label-success">添加成功</span>
+                                    <span class="label label-success">少儿部</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" name="item" id="item1"></td>
                                 <td>2</td>
                                 <td class="unitName">硬笔书法</td>
-                                <td class="unitNum">002</td>
+                                <!--<td class="unitNum">002</td>-->
                                 <td class="unitStatue">2018-01-17 11:18:00</td>
                                 <td class="unitUser">zhanglu</td>
-                                <td class="unitAddress">高考部</td>
+                                <!--<td class="unitAddress">高考部</td>-->
                                 <td class="unitPhone">
-                                    <span class="label label-danger">添加失败</span>
+                                    <span class="label label-primary">高考部</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" name="item" id="item2"></td>
                                 <td>3</td>
                                 <td class="unitName">欧体书法</td>
-                                <td class="unitNum">003</td>
+                                <!--<td class="unitNum">003</td>-->
                                 <td class="unitStatue">2018-01-17 11:25:24</td>
                                 <td class="unitUser">Administrator</td>
-                                <td class="unitAddress">少儿部</td>
+                                <!--<td class="unitAddress">少儿部</td>-->
                                 <td class="unitPhone">
-                                    <span class="label label-success">添加成功</span>
+                                    <span class="label label-success">少儿部</span>
                                 </td>
                             </tr>
                             </tbody>
@@ -248,7 +249,7 @@
 
                 <div class="x_panel" id="hidden_form">
                     <div class="x_title">
-                        <h3 class="nav navbar-left" id="hidden_form_title">添加单位</h3>
+                        <h3 class="nav navbar-left" id="hidden_form_title">添加课程分类</h3>
                         <ul class="nav navbar-right panel_toolbox">
                             <li><a id="closed"><i class="fa fa-close">关闭</i></a></li>
                         </ul>
@@ -257,61 +258,73 @@
                     <!-- start form for validation -->
                     <form id="addform" class="form-horizontal ">
                         <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="fullname">单位名称 * :</label>
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="fullname">分类名称 * :</label>
                             <div class="col-xs-12 col-sm-10 col-md-10">
                                 <input type="text" id="fullname" class="form-control" name="fullname" maxlength="36"
                                        required/>
                             </div>
                         </div>
 
+                        <!--<div class="form-group col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<label class="control-label col-md-2 col-sm-2 col-xs-12">分类编号 * :</label>-->
+                            <!--<div class="col-md-10 col-sm-10 col-xs-12">-->
+                                <!--<input type="text" id="number" name="number" class="form-control" required-->
+                                       <!--maxlength="36">-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="form-group col-md-6 col-sm-12 col-xs-12">-->
+                            <!--<label class="control-label col-md-2 col-sm-2 col-xs-12" for="user"> 添加时间 *:</label>-->
+                            <!--<div class="col-xs-12 col-sm-10 col-md-10">-->
+                                <!--<input type="text" id="user" class="form-control" name="user"-->
+                                       <!--data-parsley-trigger="change"-->
+                                       <!--maxlength="20" required/>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
                         <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12">单位编号 * :</label>
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="tel"> 添加人 *:</label>
                             <div class="col-md-10 col-sm-10 col-xs-12">
-                                <input type="text" id="number" name="number" class="form-control" required
-                                       maxlength="36">
+                                <input type="tel" id="tel" class="form-control" name="tel" required
+                                       />
                             </div>
                         </div>
-
-                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="user"> 联系人 *:</label>
-                            <div class="col-xs-12 col-sm-10 col-md-10">
-                                <input type="text" id="user" class="form-control" name="user"
-                                       data-parsley-trigger="change"
-                                       maxlength="20" required/>
-                            </div>
-                        </div>
-
-                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12" for="tel"> 联系电话 *:</label>
-                            <div class="col-md-10 col-sm-10 col-xs-12">
-                                <input type="tel" id="tel" class="form-control" name="tel" maxlength="20" required
-                                       pattern="^(0|86|17951)?(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}"/>
-                            </div>
-                        </div>
-
+                        <!--<div class="form-group col-xs-12 col-sm-12 col-md-12 ">-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="control-label col-md-1 col-sm-2 col-xs-12" for="address">所属类目 *:</label>-->
+                                <!--<div class="col-xs-12 col-sm-10 col-md-11">-->
+                                    <!--<p>-->
+                                        <!--少儿部:<input type="radio" class="flat" name="statue" id="statueOn" value="on"-->
+                                                  <!--checked=""-->
+                                                  <!--required/>&nbsp;&nbsp;&nbsp;-->
+                                        <!--高考部:<input type="radio" class="flat" name="statue" id="statueOff" value="off"/>-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
                         <div class="form-group col-xs-12 col-sm-12 col-md-12 ">
                             <div class="form-group">
-                                <label class="control-label col-md-1 col-sm-2 col-xs-12">单位状态 *:</label>
+                                <label class="control-label col-md-1 col-sm-2 col-xs-12">所属类目 *:</label>
                                 <div class="col-xs-12 col-sm-10 col-md-11">
                                     <p>
-                                        开通:<input type="radio" class="flat" name="statue" id="statueOn" value="on"
+                                        少儿部:<input type="radio" class="flat" name="statue" id="statueOn" value="on"
                                                   checked=""
                                                   required/>&nbsp;&nbsp;&nbsp;
-                                        关闭:<input type="radio" class="flat" name="statue" id="statueOff" value="off"/>
+                                        高考部:<input type="radio" class="flat" name="statue" id="statueOff" value="off"/>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-group col-xs-12 col-sm-12 col-md-12 ">
-                            <div class="form-group">
-                                <label class="control-label col-md-1 col-sm-2 col-xs-12" for="address">地址 *:</label>
-                                <div class="col-xs-12 col-sm-10 col-md-11">
-                                    <textarea id="address" class="form-control" name="address" maxlength="100"
-                                              required></textarea>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="form-group col-xs-12 col-sm-12 col-md-12 ">-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="control-label col-md-1 col-sm-2 col-xs-12" for="address">地址 *:</label>-->
+                                <!--<div class="col-xs-12 col-sm-10 col-md-11">-->
+                                    <!--<textarea id="address" class="form-control" name="address" maxlength="100"-->
+                                              <!--required></textarea>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
                         <br/>
                         <div class=" form-group col-md-12 col-sm-12 col-xs-12">
                             <div class="col-md-6 col-sm-6 col-xs-6 ">
@@ -333,7 +346,7 @@
         <!-- footer content -->
         <footer>
             <div class="pull-right">
-                版权所有 2003-2017 <a href="http://www.shanyueweb.com/">善悦网络技术有限公司</a>
+                版权所有 2003-2017 <a href="http://www.shanyueweb.com/">国乐书法</a>
             </div>
             <div class="clearfix"></div>
         </footer>
@@ -385,11 +398,11 @@
             var checked = $('input:checkbox[name=item]:checked').parents("tr");
             var name = checked.find(".unitName").text();
             var num = checked.find(".unitNum").text();
-            var user = checked.find(".unitUser").text();
+            var user = checked.find(".unitStatue").text();
             var address = checked.find(".unitAddress").text();
-            var tel = checked.find(".unitPhone").text();
+            var tel = checked.find(".unitUser").text();
             $('#hidden_form').css('display', 'block');
-            $('#hidden_form_title').html('编辑单位');
+            $('#hidden_form_title').html('编辑分类');
             $('#fullname').val(name);
             $('#number').val(num);
             $('#user').val(user);
