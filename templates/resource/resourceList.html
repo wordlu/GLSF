@@ -3,11 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>流程模块</title>
+    <title>国乐书法网站后台管理系统</title>
+
     <!-- Bootstrap -->
     <link href="../../static/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <!-- Font Awesome -->
@@ -25,42 +26,91 @@
     <link href="../../static/build/css/custom.min.css" rel="stylesheet"/>
     <link href="../../static/css/index.css" rel="stylesheet"/>
 </head>
+
 <body class="nav-md">
 <div class="container body">
     <div class="main_container">
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="../index.html" class="site_title"><i class="fa fa-paw"></i> <span>ShanyueData</span></a>
+                    <a href="../index.html" class="site_title"><i class="fa fa-mortar-board"></i> <span>国乐书法</span></a>
                 </div>
 
                 <div class="clearfix"></div>
+
                 <!-- menu profile quick info -->
                 <div class="profile clearfix">
                     <div class="profile_pic">
-                        <img src="../../static/build/images/img.jpg" alt="..." class="img-circle profile_img">
+                        <img src="../../static/build/images/img.jpg" alt="..." class="img-circle profile_img"/>
                     </div>
                     <div class="profile_info">
-                        <span>Welcome</span>
-                        <h2>Admin</h2>
+                        <span>欢迎</span>
+                        <h2>超级管理员</h2>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
+
                 <br/>
 
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
-                        <h3>General</h3>
+                        <h3>导航</h3>
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-clone"></i> 课程分类 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="../index.html">局委单位基本信息</a></li>
-                                    <li><a href="resourceList.html">流程模块</a></li>
-                                    <li><a href="../honor/honorList.html">数据源基本信息</a></li>
+                                    <li><a href="../index.html">课程分类列表</a></li>
+                                    <li><a href="../sort/addSort.html">添加课程分类</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-file-text-o"></i>日志<span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-book"></i> 课程管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../course/courseList.html">课程列表</a></li>
+                                    <li><a href="../course/addCourse.html">添加课程</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-users"></i> 教师管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../teacher/teacherList.html">教师列表</a></li>
+                                    <li><a href="../teacher/addTeacher.html">添加教师</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-leaf"></i> 荣誉管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../honor/honorList.html">荣誉列表</a></li>
+                                    <li><a href="../honor/addHonor.html">添加荣誉</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-dashboard"></i> 资源管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../resource/resourceList.html">资源列表</a></li>
+                                    <li><a href="../resource/addResource.html">添加资源</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-qrcode"></i> 作品展示 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../works/worksList.html">作品列表</a></li>
+                                    <li><a href="../works/addWorks.html">添加作品</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-envelope-o"></i> 在线咨询 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../advisory/advisory.html">咨询列表</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-home"></i> 角色管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="../userrights/userrights.html">角色列表</a></li>
+                                    <li><a href="../works/addWorks.html">添加角色</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-cog"></i> 权限管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#">权限列表</a></li>
+                                    <li><a href="#">添加权限</a></li>
+                                </ul>
+                            </li>
+                            <li><a><i class="fa fa-file-text-o"></i>日志管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="../log/login_log.html">登录日志查看</a></li>
                                     <li><a>交换日志查看</a></li>
@@ -68,6 +118,13 @@
                                     <li><a>操作日志查看</a></li>
                                 </ul>
                             </li>
+                            <li><a><i class="fa fa-user"></i> 管理员管理 <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#">管理员列表</a></li>
+                                    <li><a href="#">添加管理员</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -89,7 +146,6 @@
                     </a>
                 </div>
                 <!-- /menu footer buttons -->
-
             </div>
         </div>
 
@@ -105,7 +161,7 @@
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
                                aria-expanded="false">
-                                <img src="../../static/build/images/img.jpg" alt="">Administrator
+                                <img src="../../static/build/images/img.jpg" alt=""/>Administrator
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -125,359 +181,118 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h3>流程信息</h3>
+                        <h3>资源列表</h3>
                         <ul class="nav navbar-left panel_toolbox">
-                            <li><a id="add"><i class="fa fa-plus">&nbsp;添加</i></a></li>&nbsp;
-                            <li><a id="setting"><i class="fa fa-pencil">&nbsp;编辑</i> </a></li>
+                            <li><a id="add"><i class="fa fa-plus">&nbsp;添加</i></a></li>
+                            <li><a id="setting"><i class="fa fa-pencil">&nbsp;编辑</i></a></li>
                             <li><a id="minus"><i class="fa fa-minus">&nbsp;删除</i></a></li>
                         </ul>
-
                         <div class="clearfix"></div>
-
                     </div>
                     <div class="x_content">
-                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
-                            <label>
-                                显示
-                                <select class="input-sm">
-                                    <option>5</option>
-                                    <option>10</option>
-                                    <option>20</option>
-                                </select>
-                                条信息
-                            </label>
-                        </div>
-                        <table class="table table-striped table-bordered bulk_action">
+                        <table id="datatable-checkbox" class="table table-striped table-bordered bulk_action">
                             <thead>
                             <tr>
                                 <th><input type="checkbox" onclick="swapCheck()">&nbsp;&nbsp;全选</th>
                                 <th>序号</th>
-                                <th>流程名称</th>
-                                <th>所属任务</th>
-                                <th>流程编号</th>
-                                <th>加密</th>
-                                <th>压缩</th>
-                                <th>有序</th>
-                                <th>(有序)序号</th>
-                                <th>增量模式</th>
-                                <th>流程状态</th>
-                                <th>流程描述</th>
-                                <th>流程关系映射</th>
+                                <th>资源名称</th>
+                                <th>添加时间</th>
+                                <th>添加人</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td><input type="checkbox" name="item" id="item0"></td>
-                                <td class="td_number">1</td>
-                                <td class="td_p_name">名称1</td>
-                                <td class="td_p_task">任务1</td>
-                                <td class="td_p_number">1</td>
-                                <td class="td_encryption">否</td>
-                                <td class="td_compress">否</td>
-                                <td class="td_order">否</td>
-                                <td class="td_s_number">46</td>
-                                <td class="td_p_mode">全增</td>
-                                <td class="td_p_state">不可用</td>
-                                <td class="td_p_description">描述1</td>
-
-                                <td>
-                                    <a href="javascript:0" class="btn btn-primary btn-xs mapping_view"><i
-                                            class="fa fa-folder"></i>
-                                        查看 </a>
-                                    <a href="javascript:0" class="btn btn-info btn-xs mapping_edit"><i
-                                            class="fa fa-pencil"></i> 编辑
-                                    </a>
-                                    <a href="javascript:0" class="btn btn-danger btn-xs mapping_delete"><i
-                                            class="fa fa-trash-o"></i> 删除 </a>
-                                </td>
+                                <td>1</td>
+                                <td class="unitName">硬笔书法字帖</td>
+                                <td class="unitStatue">2018-01-17 11:10:00</td>
+                                <td class="unitUser">Administrator</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="item" id="item1"></td>
-                                <td class="td_number">2</td>
-                                <td class="td_p_name">名称2</td>
-                                <td class="td_p_task">任务2</td>
-                                <td class="td_p_number">2</td>
-                                <td class="td_encryption">是</td>
-                                <td class="td_compress">是</td>
-                                <td class="td_order">是</td>
-                                <td class="td_s_number">123</td>
-                                <td class="td_p_mode">半增</td>
-                                <td class="td_p_state">可用</td>
-                                <td class="td_p_description">描述2</td>
-                                <td>
-                                    <a href="javascript:0" class="btn btn-primary btn-xs mapping_view"><i
-                                            class="fa fa-folder"></i>
-                                        查看 </a>
-                                    <a href="javascript:0" class="btn btn-info btn-xs mapping_edit"><i
-                                            class="fa fa-pencil"></i> 编辑
-                                    </a>
-                                    <a href="javascript:0" class="btn btn-danger btn-xs mapping_delete"><i
-                                            class="fa fa-trash-o"></i> 删除 </a>
-                                </td>
+                                <td><input type="checkbox" name="item" id="item0"></td>
+                                <td>2</td>
+                                <td class="unitName">颜体书法字帖</td>
+                                <td class="unitStatue">2018-01-17 11:10:00</td>
+                                <td class="unitUser">Administrator</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="item" id="item0"></td>
+                                <td>3</td>
+                                <td class="unitName">欧体书法字帖</td>
+                                <td class="unitStatue">2018-01-17 11:10:00</td>
+                                <td class="unitUser">Administrator</td>
                             </tr>
                             </tbody>
                         </table>
-                        <ul class="pagination" style="float: right;">
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
+                    </div>
+                </div>
+
+                <!--隐藏的添加表单-->
+
+                <div class="x_panel" id="hidden_form">
+                    <div class="x_title">
+                        <h3 class="nav navbar-left" id="hidden_form_title">添加资源</h3>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a id="closed"><i class="fa fa-close">关闭</i></a></li>
                         </ul>
+                        <div class="clearfix"></div>
                     </div>
-                </div>
-            </div>
-
-            <!--隐藏表单 -->
-            <div class="col-xs-12 col-sm-12 col-md-12" id="hidden_form">
-                <div class="container">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h3 id="hide_f_title" class="nav navbar-left">流程信息</h3>
-                            <ul class="nav navbar-right panel_toolbox">
-                                <li><a id="closed"><i class="fa fa-close">关闭</i></a></li>
-                            </ul>
-                            <div class="clearfix"></div>
+                    <!-- start form for validation -->
+                    <form id="addform" class="form-horizontal ">
+                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12"
+                                   for="fullname">资源名称 * :</label>
+                            <div class="col-xs-12 col-sm-10 col-md-10">
+                                <input type="text" id="fullname" class="form-control" name="fullname" maxlength="36"
+                                       required/>
+                            </div>
                         </div>
 
-                        <form id="add_form" class="form-horizontal ">
-                            <div class="form-group col-xs-12 col-sm-12 col-md-12 ">
-                                <div class="form-group">
-                                    <label class="control-label col-md-1 col-sm-2 col-xs-12"
-                                           for="process_name">流程名称</label>
-                                    <div class="col-xs-12 col-sm-10 col-md-11">
-                                        <input type="text" id="process_name" name="process_name" class="form-control"
-                                               placeholder="流程名称"
-                                               required
-                                               maxlength="50">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                <label class="control-label col-md-2 col-sm-4 col-xs-12" for="process_task">所属任务</label>
-                                <div class="col-xs-12 col-sm-8 col-md-10">
-                                    <select class="select2_single form-control" tabindex="-1" id="process_task"
-                                            name="process_task">
-                                        <option value="0" selected>所属任务</option>
-                                        <option value="1">任务1</option>
-                                        <option value="2">任务2</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                <label class="control-label col-md-2 col-sm-4 col-xs-12" for="process_id">流程编号</label>
-                                <div class="col-md-10 col-sm-8 col-xs-12">
-                                    <input type="text" id="process_id" name="process_id" class="form-control"
-                                           placeholder="流程编号" required
-                                           maxlength="36" pattern="^[0-9]*$">
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                <label class=" control-label col-md-2 col-sm-4 col-xs-12">增量模式</label>
-                                <div class=" col-xs-12 col-sm-8 col-md-10">
-                                    <p>
-                                        全增<input type="radio" name="statueType" id="allType" checked/>&nbsp;&nbsp;&nbsp;
-                                        半增<input type="radio" name="statueType" id="halfType"/>&nbsp;&nbsp;&nbsp;
-                                        标志位<input type="radio" name="statueType" id="node"/>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-1 col-sm-1 col-xs-12">
-                                <div>
-                                    <label class="checkbox control-label">
-                                        <input type="checkbox" checked="checked" id="isSecret" name="isSecret">加密
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-1 col-sm-1 col-xs-12 ">
-                                <div class="form-group">
-                                    <label class="checkbox control-label">
-                                        <input type="checkbox" checked="checked" id="isZip" name="isZip">压缩
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-1 col-sm-1 col-xs-12 ">
-                                <div>
-                                    <label class="checkbox control-label">
-                                        <input type="checkbox" checked id="isOrder" name="isOrder"
-                                               onchange="orderChange(this)">有序
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-3 col-sm-3 col-xs-12" id="isOrderShow">
-                                <label class="control-label col-md-4 col-sm-4 col-xs-12" for="process_id">序号</label>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                    <input type="number" id="process_number" name="process_number" class="form-control"
-                                           placeholder="序号"
-                                           maxlength="3" pattern="^[0-9]*$">
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                <label class=" control-label col-md-2 col-sm-4 col-xs-12">流程状态</label>
-                                <div class="col-md-10 col-sm-8 col-xs-12 ">
-                                    <p>
-                                        可用<input type="radio" name="statue" id="statueOn" checked/>&nbsp;&nbsp;&nbsp;
-                                        不可用<input type="radio" name="statue" id="statueOff"/>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                <label class="control-label col-md-1 col-sm-2 col-xs-12"
-                                       for="process_describe">描述</label>
-                                <div class="col-md-11 col-sm-10 col-xs-12">
-                                    <textarea id="process_describe" required="required" class="form-control"
-                                              name="message" maxlength="255"></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class=" form-group col-md-12 col-sm-12 col-xs-12">
-                                <div class="col-md-6 col-sm-6 col-xs-6 ">
-                                    <button type="submit" class="btn btn-primary pull-right" id="process_submit">提交
-                                    </button>
-                                </div>
-                                <button type="button" class="btn btn-info" id="process_cancel">取消</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!--/隐藏表单 -->
-
-            <!-- 流程关系映射表单-->
-            <div class="col-md-12 col-sm-12 col-xs-12" id="mapping_form">
-                <div class="container">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h3 class="nav navbar-left">流程关系</h3>
-                            <ul class="nav navbar-right panel_toolbox">
-                                <li><a id="mapping_closed"><i class="fa fa-close">关闭</i></a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-
-                        <form class="form-horizontal">
-                            <!-- 添加流程关系 -->
-                            <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                <label class="control-label col-md-2 col-sm-4 col-xs-12"
-                                       for="mapping_source_table">源库表</label>
-                                <div class="col-md-10 col-sm-8 col-xs-12">
-                                    <select class="select2_single form-control" tabindex="-1" id="mapping_source_table">
-                                        <option value="0">源库表</option>
-                                        <option value="1">Alaska</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-5 col-sm-5 col-xs-12">
-                                <label class="control-label col-md-2 col-sm-4 col-xs-12"
-                                       for="mapping_target_table">目标库表</label>
-                                <div class="col-md-10 col-sm-8 col-xs-12">
-                                    <select class="select2_single form-control" tabindex="-1" id="mapping_target_table">
-                                        <option value="0">目标库表</option>
-                                        <option value="1">Alaska</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group col-md-1 col-sm-1 col-xs-12 ">
-                                <button type="button" class="btn btn-primary pull-right" id="mapping_table_confirm"
-                                        name="mapping_table_confirm">确认
-                                </button>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-12" id="hidden_form3">
-                                <div class="container">
-                                    <!-- 配置字段关系映射 -->
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <h4 id="mapping_title">配置字段关系映射</h4>
-                                    </div>
-                                    <div class="form-group col-md-12 col-sm-12 col-xs-12 " id="map_point">
-                                        <button type="button" class="btn btn-round btn-default form-group "
-                                                id="add_mapping"
-                                                name="add_mapping"><a href="javascript:"> <i class="fa fa-plus"></i></a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/ 配置字段关系映射 -->
-
-                        </form>
-
-
-                    </div>
-                </div>
-            </div>
-            <!--/ 流程关系映射表单-->
-
-            <div class="col-md-12 col-sm-12 col-xs-12" id="hidden_form4">
-                <div class="container">
-                    <div class="x_panel">
-                        <div class="x_title">
-                            <h3 class="nav navbar-left">流程关系</h3>
-                            <ul class="nav navbar-right panel_toolbox">
-                                <li><a id="form4_closed"><i class="fa fa-close">关闭</i></a></li>
-                            </ul>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div class="x_content">
-                            <div class="table-responsive">
-                                <table class="table jambo_table ">
-                                    <thead>
-                                    <tr class="dbtable">
-                                        <th colspan="4">
-                                            <span>源库表:源表表名</span>&nbsp;&nbsp;&nbsp;
-                                            <span>目标库表:目标表表名</span>
-                                        </th>
-                                    </tr>
-                                    <tr class="headings">
-                                        <th class="column-title">源表字段</th>
-                                        <th class="column-title">条件</th>
-                                        <th class="column-title">条件值</th>
-                                        <th class="column-title">目标字段</th>
-                                    </tr>
-                                    </thead>
-
-                                    <tbody>
-                                    <tr class="even pointer">
-                                        <td class="pSourcefield">源表字段1</td>
-                                        <td class="pCondition">条件1</td>
-                                        <td class="pConditionNum">1</td>
-                                        <td class="pTargetfield">目标字段1</td>
-                                    </tr>
-                                    <tr class="even pointer">
-                                    </tbody>
-                                </table>
+                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">添加人 *:</label>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <input type="text" id="user" name="user" class="form-control"
+                                       required
+                                       maxlength="36">
                             </div>
                         </div>
-                    </div>
+
+                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                            <label class="control-label col-md-1 col-sm-1 col-xs-12" for="tel">
+                                上传资源 *:</label>
+                            <div class="col-md-11 col-sm-11 col-xs-12">
+                                <input type="file" id="tel" class="form-control" value="上传文件"/>
+                            </div>
+                        </div>
+
+                        <br/>
+                        <div class=" form-group col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-6 ">
+                                <button type="submit" class="btn btn-primary pull-right">提交</button>
+                            </div>
+                            <button type="button" class="btn btn-info " id="cancle_btn">取消</button>
+                        </div>
+                    </form>
+                    <!-- end form for validations -->
                 </div>
+
+                <!--/隐藏的添加表单-->
+
             </div>
+
         </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                版权所有 2003-2017 <a href="http://www.shanyueweb.com/">国乐书法</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
     </div>
-    <!-- /page content -->
-
-    <!-- footer content -->
-    <footer>
-        <div class="pull-right">
-            版权所有 2003-2017 <a href="http://www.shanyueweb.com/">善悦网络技术有限公司</a>
-        </div>
-        <div class="clearfix"></div>
-    </footer>
-    <!-- /footer content -->
-
 </div>
-
 
 <!-- jQuery -->
 <script src="../../static/build/js/jquery.min.js"></script>
@@ -489,7 +304,7 @@
 <script src="../../static/build/js/nprogress.js"></script>
 <!-- gauge.js -->
 <script src="../../static/build/js/gauge.min.js"></script>
-<!-- bootstrap-progressbar -->
+<!--bootstrap-progressbar -->
 <script src="../../static/build/js/bootstrap-progressbar.min.js"></script>
 <!-- iCheck -->
 <script src="../../static/build/js/icheck.min.js"></script>
@@ -510,168 +325,60 @@
 <script src="../../static/build/js/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
 
 <script type="text/javascript">
-    //编辑流程
+
+    //添加单位
+    $('#add').click(function () {
+        $('#hidden_form').css('display', 'block');
+    });
+
+
+    //编辑单位
     $('#setting').click(function () {
-
         if ($('input:checkbox[name=item]:checked').length === 1) {
-            var itemChecked = $('input:checkbox[name=item]:checked').parents("tr");
+            var checked = $('input:checkbox[name=item]:checked').parents("tr");
+            var name = checked.find(".unitName").text();
+            var user = checked.find(".unitUser").text();
+            var intro = checked.find(".unitIntro").text();
             $('#hidden_form').css('display', 'block');
-            $('#hide_f_title').html('编辑流程');
-            var td_p_name = itemChecked.find('.td_p_name').text();
-            var td_p_task = itemChecked.find('.td_p_task').text();
-            var td_p_number = itemChecked.find('.td_p_number').text();
-            var td_encryption = itemChecked.find('.td_encryption').text();
-            var td_compress = itemChecked.find('.td_compress').text();
-            var td_order = itemChecked.find('.td_order').text();
-            var td_s_number = itemChecked.find('.td_s_number').text();
-            var td_p_mode = itemChecked.find('.td_p_mode').text();
-            var td_p_state = itemChecked.find('.td_p_state').text();
-            var td_p_description = itemChecked.find('.td_p_description').text();
-
-
-            $('#process_name').val(td_p_name);
-            $('#process_task option:contains(' + td_p_task + ')').each(function () {
-                if ($(this).text() == td_p_task) {
-                    $(this).attr('selected', true);
-                }
-            });
-            $('#process_id').val(td_p_number);
-            if (td_p_mode === "全增") {
-                $('#allType').click();
-            } else if (td_p_mode === "半增") {
-                $('#halfType').click();
-            } else {
-                $('#node').click();
-            }
-
-            if (td_encryption === "是") {
-                $('#isSecret').attr('checked', true)
-            } else {
-                $('#isSecret').attr('checked', false)
-            }
-
-            if (td_compress === "是") {
-                $('#isZip').attr('checked', true)
-            } else {
-                $('#isZip').attr('checked', false)
-            }
-
-            if (td_order === "是") {
-                $('#isOrder').attr('checked', true);
-                $('#isOrderShow').css('display', 'block');
-                $('#process_number').val(td_s_number)
-            } else {
-                $('#isOrder').attr('checked', false);
-                $('#isOrderShow').css('display', 'none');
-                $('#process_number').val("")
-            }
-            if (td_p_state === "可用") {
-                $('#statueOn').click()
-            } else {
-                $('#statueOff').click()
-            }
-            $('#process_describe').val(td_p_description);
+            $('#hidden_form_title').html('编辑资源信息');
+            $('#fullname').val(name);
+            $('#user').val(user);
+            $('#intro').val(intro);
         } else {
-            alert("请选择一个流程");
+            alert("请选择一个单位");
+        }
+    });
+    //删除单位
+    $('#minus').click(function () {
+        var length = $('input:checkbox[name=item]:checked').length;
+        if (length > 0) {
+            del();
+        } else {
+            alert("请至少选择一个单位");
         }
     });
 
-    function orderChange(obj) {
-        if ($(obj).prop("checked")) {
-            $('#isOrderShow').css('display', 'block');
-            $('#isOrderShow').attr('required', 'required');
+    //删除确认
+    function del() {
+        var msg = "确定要删除吗？";
+        if (confirm(msg) == true) {
+            var length = $('input:checkbox[name=item]:checked').length;
+            for (var i = 0; i < length; i++) {
+                $('input:checkbox[name=item]:checked').parents("tr").remove();
+            }
+            return true;
         } else {
-            $('#isOrderShow').css('display', 'none');
-            $('#process_number').val("")
+            return false;
         }
     }
 
-    //编辑流程关系表单
-    $('#mapping_table_confirm').click(function () {
-        $('#hidden_form3').css('display', 'block');
-    });
-    var addNumber = 0;
-
-    //添加字段关系
-    $('#add_mapping').click(function () {
-        $('#map_point').before(function (n) {
-            addNumber++;
-            return '  <div class="form-group col-md-12 col-sm-12 col-xs-12 mapping_div" id="' + addNumber + '">\n' +
-                '                                <div class=" form-group col-md-3 col-sm-3 col-xs-12">\n' +
-                '                                    <select class="select2_single form-control" tabindex="-1" id="mapping_source"\n' +
-                '                                            name="mapping_source">\n' +
-                '                                        <option>选择源表字段</option>\n' +
-                '                                        <option value="0">Alaska</option>\n' +
-                '                                    </select>\n' +
-                '                                </div>\n' +
-                '\n' +
-                '                                <div class="form-group  col-md-4 col-sm-4 col-xs-12">\n' +
-                '                                    <div class="input-group ">\n' +
-                '                                        <div class="input-group-btn ">\n' +
-                '                                            <button type="button" class="btn btn-default dropdown-toggle "\n' +
-                '                                                    data-toggle="dropdown" aria-expanded="false" id="mapping_condition"\n' +
-                '                                                    name="mapping_condition">选择条件<span\n' +
-                '                                                    class="caret"></span>\n' +
-                '                                            </button>\n' +
-                '                                            <ul class="dropdown-menu dropdown-menu-right" role="menu" id="mapping_ul">\n' +
-                '                                                <li class="con_li"><a>12</a></li>\n' +
-                '                                                <li class="con_li"><a>23</a></li>\n' +
-                '                                                <li class="con_li"><a>34</a></li>\n' +
-                '                                            </ul>\n' +
-                '                                        </div>\n' +
-                '                                        <input type="text" class="form-control " name="mapping_value" id="mapping_value"\n' +
-                '                                               placeholder="输入条件值">\n' +
-                '                                    </div>\n' +
-                '                                </div>\n' +
-                '\n' +
-                '                                <div class="form-group col-md-3 col-sm-3 col-xs-12">\n' +
-                '                                    <select class="select2_single form-control" tabindex="-1" id="mapping_target"\n' +
-                '                                            name="mapping_target">\n' +
-                '                                        <option>选择目标表字段</option>\n' +
-                '                                        <option value="0">Alaska</option>\n' +
-                '                                    </select>\n' +
-                '                                </div>\n' +
-                '\n' +
-                '                                <div class="form-group col-md-1 col-sm-1 col-xs-12">\n' +
-                '                                    <button type="button" class="btn btn-primary"  id="mapping_confirm"\n' +
-                '                                            name="mapping_confirm">确认\n' +
-                '                                    </button>\n' +
-                '                                </div>\n' +
-                '                                <div class="form-group col-md-1 col-sm-1 col-xs-12"">\n' +
-                '                                    <button type="button" class="btn btn-danger rem"  id="mapping_remove' + addNumber + '"\n' +
-                '                                            name="mapping_remove" onclick="delDiv(this)">删除\n' +
-                '                                    </button>\n' +
-                '                                </div>\n' +
-                '                            </div> ';
-        });
-    });
-
-
-    $("button.rem").click(function () {
-        $(this).parent().parent().remove();
-    });
-
-    //关闭流程关系查看表单
-    $('#form4_closed').click(function () {
-        $('#hidden_form4').css('display', 'none');
-    });
-    //流程关系
-    $('#mapping_closed').click(function () {
-        $('#mapping_form').css('display', 'none');
-        $('#mapping_form input').val("");
-    });
-
-    $('.mapping_edit').click(function () {
-        $('#mapping_form').css('display', 'block')
-    });
-    $('.mapping_view').click(function () {
-        $('#hidden_form4').css('display', 'block')
-    });
-
-    function delDiv(obj) {
-        $(obj).parents(".mapping_div").remove()
-    }
-
+    //关闭隐藏表单
+    $('#closed,#cancle_btn').click(function () {
+        $('#hidden_form').css('display', 'none');
+        $('#hidden_form input,textarea').val("");
+    })
 </script>
+
+
 </body>
 </html>
