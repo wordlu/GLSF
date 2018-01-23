@@ -100,22 +100,21 @@
                             </li>
                             <li><a><i class="fa fa-home"></i> 角色管理 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="../userrights/userrights.html">角色列表</a></li>
-                                    <li><a href="../works/addWorks.html">添加角色</a></li>
+                                    <li><a href="../role/roleList.html">角色列表</a></li>
+                                    <li><a href="../role/addRole.html">添加角色</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-cog"></i> 权限管理 <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">权限列表</a></li>
-                                    <li><a href="#">添加权限</a></li>
+                                    <li><a href="../purview/purviewList.html">权限列表</a></li>
+                                    <li><a href="../purview/addPurview.html">添加权限</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-file-text-o"></i>日志管理<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
+                                    <li><a href="../log/operation_log.html">操作日志查看</a></li>
                                     <li><a href="../log/login_log.html">登录日志查看</a></li>
-                                    <li><a>交换日志查看</a></li>
-                                    <li><a>错误日志查看</a></li>
-                                    <li><a>操作日志查看</a></li>
+
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-user"></i> 管理员管理 <span class="fa fa-chevron-down"></span></a>
@@ -184,9 +183,6 @@
                 <div class="x_panel" >
                     <div class="x_title">
                         <h3 class="nav navbar-left" id="hidden_form_title">添加管理员</h3>
-                        <ul class="nav navbar-right panel_toolbox">
-                            <li><a id="closed"><i class="fa fa-close">关闭</i></a></li>
-                        </ul>
                         <div class="clearfix"></div>
                     </div>
                     <!-- start form for validation -->
@@ -281,76 +277,6 @@
 <script src="../../static/build/js/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
 <script src="../../static/build/js/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
 
-<script type="text/javascript">
-
-    //添加单位
-    $('#add').click(function () {
-        $('#hidden_form').css('display', 'block');
-    });
-
-
-    //编辑单位
-    $('#setting').click(function () {
-        if ($('input:checkbox[name=item]:checked').length === 1) {
-            var checked = $('input:checkbox[name=item]:checked').parents("tr");
-            var name = checked.find(".unitName").text();
-            var num = checked.find(".unitNum").text();
-            var user = checked.find(".unitStatue").text();
-            var address = checked.find(".unitAddress").text();
-            var tel = checked.find(".unitUser").text();
-            $('#hidden_form').css('display', 'block');
-            $('#hidden_form_title').html('编辑单位');
-            $('#fullname').val(name);
-            $('#number').val(num);
-            $('#user').val(user);
-            $('#address').val(address);
-            $('#tel').val(tel);
-        } else {
-            alert("请选择一个单位");
-        }
-    });
-    //删除单位
-    $('#minus').click(function () {
-        var length = $('input:checkbox[name=item]:checked').length;
-        if (length > 0) {
-            del();
-        } else {
-            alert("请至少选择一个单位");
-        }
-    });
-
-    //删除确认
-    function del() {
-        var msg = "确定要删除吗？";
-        if (confirm(msg) == true) {
-            var length = $('input:checkbox[name=item]:checked').length;
-            for (var i = 0; i < length; i++) {
-                $('input:checkbox[name=item]:checked').parents("tr").remove();
-            }
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    //关闭隐藏表单
-    $('#closed,#cancle_btn').click(function () {
-        $('#hidden_form').css('display', 'none');
-        $('#hidden_form input,textarea').val("");
-    })
-
-    //提交确认
-    $('.btn').click(function () {
-        var msag = "确定提交吗？";
-        if (confirm(msag) == true) {
-            return true;
-        } else {
-            return false;
-        }
-
-
-    })
-</script>
 
 
 </body>
