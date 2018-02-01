@@ -199,7 +199,6 @@
                                 <th>课程封面</th>
                                 <th>课程介绍</th>
                                 <th>添加时间</th>
-                                <th>添加人</th>
                                 <th>所属字体</th>
                                 <th>所属类目</th>
                             </tr>
@@ -217,7 +216,6 @@
                                     </p>
                                 </td>
                                 <td class="unitStatue">2018-01-17 11:10:00</td>
-                                <td class="unitUser">Administrator</td>
                                 <td>硬笔书法</td>
                                 <td class="unitPhone">
                                     <span class="label label-success">少儿部</span>
@@ -236,7 +234,6 @@
                                     </p>
                                 </td>
                                 <td class="unitStatue">2018-01-17 11:18:00</td>
-                                <td class="unitUser">zhanglu</td>
                                 <td>欧体书法</td>
                                 <td class="unitPhone">
                                     <span class="label label-primary">高考部</span>
@@ -255,7 +252,6 @@
                                     </p>
                                 </td>
                                 <td class="unitStatue">2018-01-17 11:25:24</td>
-                                <td class="unitUser">Administrator</td>
                                 <td>颜体书法</td>
                                 <td class="unitPhone">
                                     <span class="label label-success">少儿部</span>
@@ -299,12 +295,14 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-2 col-sm-2 col-xs-12">添加人 *:</label>
-                            <div class="col-md-10 col-sm-10 col-xs-12">
-                                <input type="text" id="user" name="user" class="form-control"
-                                       required
-                                       maxlength="36">
+                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12"
+                                   for="fullname">所属类目 * :</label>
+                            <div class="col-xs-12 col-sm-10 col-md-10">
+                                <select class="form-control">
+                                    <option>少儿部</option>
+                                    <option>高考部</option>
+                                </select>
                             </div>
                         </div>
 
@@ -335,19 +333,7 @@
                                               placeholder="请输入课程介绍，不少于20字" id="intro"></textarea>
                             </div>
                         </div>
-                        <div class="form-group col-xs-12 col-sm-12 col-md-12 ">
-                            <div class="form-group">
-                                <label class="control-label col-md-1 col-sm-2 col-xs-12">所属类目 *:</label>
-                                <div class="col-xs-12 col-sm-10 col-md-11">
-                                    <p>
-                                        少儿部:<input type="radio" class="flat" name="statue" id="statueOn" value="on"
-                                                   checked=""
-                                                   required/>&nbsp;&nbsp;&nbsp;
-                                        高考部:<input type="radio" class="flat" name="statue" id="statueOff" value="off"/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+
 
                         <br/>
                         <div class=" form-group col-md-12 col-sm-12 col-xs-12">
