@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fde5cf1f-4a7d-4a9e-b731-353fe7805fb2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/addAdmin.html" afterPath="$PROJECT_DIR$/templates/admin/addAdmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course/addCourse.html" afterPath="$PROJECT_DIR$/templates/course/addCourse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/course/courseList.html" afterPath="$PROJECT_DIR$/templates/course/courseList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/sort/addSort.html" afterPath="$PROJECT_DIR$/templates/sort/addSort.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -414,7 +409,7 @@
       <workItem from="1516669076162" duration="4495000" />
       <workItem from="1516676712698" duration="763000" />
       <workItem from="1516690775344" duration="710000" />
-      <workItem from="1517452410336" duration="1991000" />
+      <workItem from="1517452410336" duration="2965000" />
     </task>
     <task id="LOCAL-00001" summary="1.19 课程管理页面">
       <created>1516345471796</created>
@@ -493,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516677429180</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2.1 修改部分页面">
+      <created>1517454681747</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1517454681747</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46246000" />
+    <option name="totallyTimeSpent" value="47220000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -558,7 +560,8 @@
     <MESSAGE value="1.22 下班保存" />
     <MESSAGE value="1.23 基本页面全部完成" />
     <MESSAGE value="1.23 11：16 基本页面全部完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.23 11：16 基本页面全部完成" />
+    <MESSAGE value="2.1 修改部分页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.1 修改部分页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
