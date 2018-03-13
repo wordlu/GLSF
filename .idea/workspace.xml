@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fde5cf1f-4a7d-4a9e-b731-353fe7805fb2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="fde5cf1f-4a7d-4a9e-b731-353fe7805fb2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +14,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="309" column="30" lean-forward="true" selection-start-line="300" selection-start-column="24" selection-end-line="309" selection-end-column="30" />
+            <state relative-caret-position="8343">
+              <caret line="309" column="30" lean-forward="false" selection-start-line="300" selection-start-column="24" selection-end-line="309" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -36,7 +34,7 @@
       <file leaf-file-name="addSort.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sort/addSort.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="5481">
               <caret line="203" column="77" lean-forward="false" selection-start-line="203" selection-start-column="77" selection-end-line="203" selection-end-column="77" />
               <folding />
             </state>
@@ -66,8 +64,8 @@
       <file leaf-file-name="addCourse.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/course/addCourse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="232" column="30" lean-forward="true" selection-start-line="223" selection-start-column="23" selection-end-line="232" selection-end-column="30" />
+            <state relative-caret-position="6264">
+              <caret line="232" column="30" lean-forward="false" selection-start-line="223" selection-start-column="23" selection-end-line="232" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -108,8 +106,8 @@
       <file leaf-file-name="addAdmin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/admin/addAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="227" column="30" lean-forward="true" selection-start-line="217" selection-start-column="24" selection-end-line="227" selection-end-column="30" />
+            <state relative-caret-position="6129">
+              <caret line="227" column="30" lean-forward="false" selection-start-line="217" selection-start-column="24" selection-end-line="227" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -241,7 +239,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,6 +270,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,6 +408,7 @@
       <workItem from="1516676712698" duration="763000" />
       <workItem from="1516690775344" duration="710000" />
       <workItem from="1517452410336" duration="2965000" />
+      <workItem from="1519454021853" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="1.19 课程管理页面">
       <created>1516345471796</created>
@@ -499,7 +498,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47220000" />
+    <option name="totallyTimeSpent" value="47227000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -512,7 +511,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -526,7 +524,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13432837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -606,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="108" column="86" lean-forward="false" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2916">
           <caret line="108" column="86" lean-forward="false" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,23 +907,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin/addAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="227" column="30" lean-forward="true" selection-start-line="217" selection-start-column="24" selection-end-line="227" selection-end-column="30" />
+        <state relative-caret-position="6129">
+          <caret line="227" column="30" lean-forward="false" selection-start-line="217" selection-start-column="24" selection-end-line="227" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="309" column="30" lean-forward="true" selection-start-line="300" selection-start-column="24" selection-end-line="309" selection-end-column="30" />
+        <state relative-caret-position="8343">
+          <caret line="309" column="30" lean-forward="false" selection-start-line="300" selection-start-column="24" selection-end-line="309" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sort/addSort.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="5481">
           <caret line="203" column="77" lean-forward="false" selection-start-line="203" selection-start-column="77" selection-end-line="203" selection-end-column="77" />
           <folding />
         </state>
@@ -935,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/course/addCourse.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="232" column="30" lean-forward="true" selection-start-line="223" selection-start-column="23" selection-end-line="232" selection-end-column="30" />
+        <state relative-caret-position="6264">
+          <caret line="232" column="30" lean-forward="false" selection-start-line="223" selection-start-column="23" selection-end-line="232" selection-end-column="30" />
           <folding />
         </state>
       </provider>
