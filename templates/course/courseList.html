@@ -208,18 +208,16 @@
                                 <td><input type="checkbox" name="item" id="item0"></td>
                                 <td>1</td>
                                 <td class="unitName">《硬笔书法教程》</td>
-                                <td>叶冬冬</td>
-                                <td><img src="../../static/img/yb1.jpg" width="80px" height="50px"></td>
+                                <td class="tea">教师3</td>
+                                <td class="imgs"><img src="../../static/img/yb1.jpg" width="80px" height="50px"></td>
                                 <td width="500" class="unitIntro">
                                     <p>
                                     《硬笔书法教程》内容翔实，形象直观，通俗易懂，既有硬笔书法基础技法指导，又有对硬笔书法用笔、结构、章法、风格等方面技巧的研究与探索，既可为中小学生学写硬笔字、参加硬笔书法考级和各种比赛提供指导，也可为广大硬笔书法爱好者提高临帖、书写和创作水平......
                                     </p>
                                 </td>
                                 <td class="unitStatue">2018-01-17 11:10:00</td>
-                                <td>硬笔书法</td>
-                                <td class="unitPhone">
-                                    <span class="label label-success">少儿部</span>
-                                </td>
+                                <td class="fun">硬笔书法</td>
+                                <td class="age">高考部</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" name="item" id="item1"></td>
@@ -286,7 +284,7 @@
                             <label class="control-label col-md-2 col-sm-2 col-xs-12"
                                    for="fullname">任课教师 * :</label>
                             <div class="col-xs-12 col-sm-10 col-md-10">
-                                <select class="form-control">
+                                <select class="form-control" id="tea">
                                     <option>选择教师</option>
                                     <option>教师1</option>
                                     <option>教师2</option>
@@ -299,7 +297,7 @@
                             <label class="control-label col-md-2 col-sm-2 col-xs-12"
                                    for="fullname">所属类目 * :</label>
                             <div class="col-xs-12 col-sm-10 col-md-10">
-                                <select class="form-control">
+                                <select class="form-control" id="age">
                                     <option>少儿部</option>
                                     <option>高考部</option>
                                 </select>
@@ -310,7 +308,7 @@
                             <label class="control-label col-md-2 col-sm-2 col-xs-12"
                                    for="fullname">所属字体 * :</label>
                             <div class="col-xs-12 col-sm-10 col-md-10">
-                                <select class="form-control">
+                                <select class="form-control" id="fun">
                                     <option>选择类型</option>
                                     <option>硬笔书法</option>
                                     <option>欧体书法</option>
@@ -320,10 +318,14 @@
                         </div>
 
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <label class="control-label col-md-1 col-sm-1 col-xs-12" for="tel">
+                            <label class="control-label col-md-1 col-sm-1 col-xs-12">
                                 课程封面 *:</label>
                             <div class="col-md-11 col-sm-11 col-xs-12">
-                                <input type="file" id="tel" class="form-control" value="上传封面图片"/>
+                                <!--<input type="file" id="tel" class="form-control" value="上传封面图片"/>-->
+                                <form action='' method='post' name='myform'>
+                                    <input type='file' id='iptfileupload' onchange='show()' value='' />
+                                    <img src='#' alt='' id='img' style="width: 200px;height: 200px;"/>
+                                </form>
                             </div>
                         </div>
                         <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -409,11 +411,19 @@
             var name = checked.find(".unitName").text();
             var user = checked.find(".unitUser").text();
             var intro = checked.find(".unitIntro").text();
+            var tea = checked.find(".tea").text();
+            var fun = checked.find(".fun").text();
+            var age = checked.find(".age").text();
+            var imgSrc = checked.find('img').attr('src');
+            $('#img').attr('src',imgSrc);
             $('#hidden_form').css('display', 'block');
             $('#hidden_form_title').html('编辑课程信息');
             $('#fullname').val(name);
             $('#user').val(user);
             $('#intro').val(intro);
+            $('#tea').val(tea);
+            $('#fun').val(fun);
+            $('#age').val(age);
         } else {
             alert("请选择一个单位");
         }
@@ -447,6 +457,79 @@
         $('#hidden_form').css('display', 'none');
         $('#hidden_form input,textarea').val("");
     })
+
+    function getPath(obj,fileQuery,transImg) {
+
+        var imgSrc = '', imgArr = [], strSrc = '' ;
+
+        if(window.navigator.userAgent.indexOf("MSIE")>=1){  // IE浏览器判断
+            if(obj.select){
+                obj.select();
+                var path=document.selection.createRange().text;
+                alert(path) ;
+                obj.removeAttribute("src");
+                imgSrc = fileQuery.value ;
+                imgArr = imgSrc.split('.') ;
+                strSrc = imgArr[imgArr.length - 1].toLowerCase() ;
+                if(strSrc.localeCompare('jpg') === 0 || strSrc.localeCompare('jpeg') === 0 || strSrc.localeCompare('gif') === 0 || strSrc.localeCompare('png') === 0){
+                    obj.setAttribute("src",transImg);
+                    obj.style.filter=
+                        "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+path+"', sizingMethod='scale');";  // IE通过滤镜的方式实现图片显示
+                }else{
+                    //try{
+                    throw new Error('File type Error! please image file upload..');
+                    //}catch(e){
+                    //  alert('name: ' + e.name + 'message: ' + e.message) ;
+                    //}
+                }
+            }else{
+                // alert(fileQuery.value) ;
+                imgSrc = fileQuery.value ;
+                imgArr = imgSrc.split('.') ;
+                strSrc = imgArr[imgArr.length - 1].toLowerCase() ;
+                if(strSrc.localeCompare('jpg') === 0 || strSrc.localeCompare('jpeg') === 0 || strSrc.localeCompare('gif') === 0 || strSrc.localeCompare('png') === 0){
+                    obj.src = fileQuery.value ;
+                }else{
+                    //try{
+                    throw new Error('File type Error! please image file upload..') ;
+                    //}catch(e){
+                    //  alert('name: ' + e.name + 'message: ' + e.message) ;
+                    //}
+                }
+
+            }
+
+        } else{
+            var file =fileQuery.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e){
+
+                imgSrc = fileQuery.value ;
+                imgArr = imgSrc.split('.') ;
+                strSrc = imgArr[imgArr.length - 1].toLowerCase() ;
+                if(strSrc.localeCompare('jpg') === 0 || strSrc.localeCompare('jpeg') === 0 || strSrc.localeCompare('gif') === 0 || strSrc.localeCompare('png') === 0){
+                    obj.setAttribute("src", e.target.result) ;
+                }else{
+                    //try{
+                    throw new Error('File type Error! please image file upload..') ;
+                    //}catch(e){
+                    //  alert('name: ' + e.name + 'message: ' + e.message) ;
+                    //}
+                }
+
+                // alert(e.target.result);
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function show(){
+        //以下即为完整客户端路径
+        var file_img=document.getElementById("img"),
+            iptfileupload = document.getElementById('iptfileupload') ;
+        getPath(file_img,iptfileupload,file_img) ;
+    }
+
 </script>
 
 
