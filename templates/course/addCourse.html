@@ -351,7 +351,9 @@
         if (confirm(msg) == true) {
             var length = $('input:checkbox[name=item]:checked').length;
             for (var i = 0; i < length; i++) {
-                $('input:checkbox[name=item]:checked').parents("tr").remove();
+//                $('input:checkbox[name=item]:checked').parents("tr").remove();
+                 var aaa =  $('input:checkbox[name=item]:checked').eq().text();
+                 alert(aaa);
             }
             return true;
         } else {
